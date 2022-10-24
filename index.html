@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="stylesheets/index.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type='text/javascript' defer src='index.js' ></script>
+  </head>
+  <body>
+    <div class="panel">
+      <div class="display">
+        <div class="title_text">
+          TIME TO LEAVE HOME 
+        </div>
+        <div class="limits_text">
+          APPROACHING LIMITS
+        </div>
+        <div class="danger_text">
+          DANGER
+        </div>
+
+        <div class="arrival_station_text">
+          到着駅：
+          <div id="station_text"></div>
+        </div>
+
+        <div class="arrival_time_text">
+          到着予定時刻：
+          <div id="time_text"></div>
+        </div>
+
+        <div class="date">
+          <div class="number_text4two back">88</div>
+          <div class="number_text4two" id="date_text">88</div>
+          <div class="date_text">日</div>
+        </div>
+
+        <div class="date">
+          <div class="number_text4two back">88</div>
+          <div class="number_text4two" id="hour_text">88</div>
+          <div class="date_text">時間</div>
+        </div>
+
+        <div class="date">
+          <div class="number_text4two back">88</div>
+          <div class="number_text4two" id="min_text">88</div>
+          <div class="date_text">分</div>
+        </div>
+
+        <div class="date">
+          <div class="number_text4two back">88</div>
+          <div class="number_text4two" id="sec_text">88</div>
+          <div class="date_text">秒</div>
+        </div>
+
+        <div class="milisec">
+          <div class="number_text4three back">888</div>
+          <div class="number_text4three" id="milisec_text">888</div>
+          <div class="milisec_text">粍</div>
+        </div>
+
+        <button class="choice_train" id="jr" onclick="jrButton()">
+          <div class="railways_name">JAPAN RAILWAYS</div>
+          <div class="station_jp">我孫子町</div>
+          <div class="station_en">ABIKOCHO</div>
+          <div class="stripe_bord" id="jr"></div>
+        </button>
+        <div class="navigation_choice_train" id="event_title">
+        </div>
+        <button class="choice_train opacity" id="metro" onclick="metroButton()">
+          <div class="railways_name">OSAKA METRO</div>
+          <div class="station_jp">あびこ</div>
+          <div class="station_en">ABIKO</div>
+          <div class="stripe_bord" id="metro"></div>
+        </button>
+      </div>
+    </div>
+
+  </body>
+</html>

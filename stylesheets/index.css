@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Chakra+Petch&family=Sawarabi+Mincho&display=swap");
+@font-face {
+  font-family: "DSEG7Modern-Bold";
+  font-style: normal;
+  src: local("DSEG7Modern-Bold"), url("/fonts/DSEG7Modern-Bold.woff") format("woff"), url("/fonts/DSEG7Modern-Bold.ttf") format("truetype");
+}
+/* line 11, ../sass/index.scss */
+body {
+  margin: auto;
+  background-color: #191919;
+}
+
+.panel {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width: 90vw;
+  height: 20vw;
+  margin: 0 auto;
+  /* margin-top: 1vw; */
+  background-color: #f69c02;
+  box-shadow: 0 0 1vw 0.2vw #f69c02;
+  border-radius: 0.5vw;
+}
+
+.panel .display {
+  position: absolute;
+  top: 0.1vw;
+  left: 0.1vw;
+  width: 89.8vw;
+  height: 19.8vw;
+  margin: 0 auto;
+  background-color: #191919;
+  border-radius: 0.5vw;
+}
+
+.panel .display .title_text {
+  position: absolute;
+  top: 0.5vw;
+  left: 0.5vw;
+  font: normal 1.5vw 'Abel', serif;
+  font-weight: 700;
+  /* color: #f69c02; */
+  color: #ffcb77;
+  letter-spacing: 0.2vw;
+}
+
+.panel .display .limits_text {
+  position: absolute;
+  top: 3vw;
+  left: 1vw;
+  font: normal 1.5vw/1.5vw 'Lato', serif;
+  color: red;
+  border: solid 0.1vw;
+  border-color: red;
+  border-radius: 0.2vw;
+}
+
+.panel .display .danger_text {
+  position: absolute;
+  top: 5vw;
+  left: 1vw;
+  font: normal 1.8vw/1.8vw 'Lato', serif;
+  color: red;
+  border: solid 0.1vw;
+  border-color: red;
+  border-radius: 0.2vw;
+}
+
+.panel .display .arrival_station_text {
+  position: absolute;
+  width: 30vw;
+  top: 1vw;
+  left: 36vw;
+  font: normal 2vw/2vw 'Sawarabi Mincho', serif;
+  color: #ffcb77;
+}
+
+.panel .display .arrival_station_text #station_text {
+  position: absolute;
+  top: 0vw;
+  left: 10vw;
+}
+
+.panel .display .arrival_time_text {
+  position: absolute;
+  width: 30vw;
+  top: 3vw;
+  left: 30vw;
+  font: normal 2vw/3vw 'Sawarabi Mincho', serif;
+  color: #ffcb77;
+}
+
+.panel .display .arrival_time_text #time_text {
+  position: absolute;
+  top: 0vw;
+  left: 16vw;
+  /* font: normal 2vw/2vw 'DSEG7Modern-Bold', serif; */
+  font: normal 2vw/3vw 'Lato', serif;
+}
+
+.panel .display .choice_train {
+  position: absolute;
+  width: 20vw;
+  height: 6vw;
+  right: 1vw;
+  background-color: #191919;
+  border: solid 0.1vw;
+  border-radius: 0.2vw;
+
+}
+
+.panel .display #jr {
+  color: rgb(220, 20, 60);
+  top: 1vw;
+}
+
+.panel .display #metro {
+  color: rgb(255, 115, 0);
+  bottom: 1vw;
+}
+
+.panel .display .opacity {
+  opacity: 0.2;
+}
+
+.panel .display .choice_train .railways_name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font: normal 1vw/1vw 'Lato', serif;
+}
+
+.panel .display .choice_train .station_jp {
+  position: absolute;
+  height: 4vw;
+  width: 17vw;
+  top: 1.8vw;
+  right: 3.5vw;
+  font: normal 3vw/3vw 'Sawarabi Mincho', serif;
+  text-align: right;
+}
+
+.panel .display .choice_train .station_en {
+  position: absolute;
+  height: 1vw;
+  width: 17vw;
+  bottom: 0vw;
+  right: 3.5vw;
+  font: normal 1vw/1vw 'Lato', serif;
+  text-align: right;
+}
+
+.panel .display .choice_train .stripe_bord {
+  position: absolute;
+  width: 3vw;
+  height: 6vw;
+  top: 0;
+  right: 0;
+}
+
+.panel .display .choice_train #jr {
+  top: 0;
+  background: repeating-linear-gradient(-45deg, rgb(220, 20, 60), rgb(220, 20, 60) 1vw, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 1) 2vw);
+}
+
+
+.panel .display .choice_train #metro {
+  bottom: 0;
+  background: repeating-linear-gradient(-45deg, rgb(255, 115, 0), rgb(255, 115, 0) 1vw, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 1) 2vw);
+}
+
+.panel .display .navigation_choice_train {
+  position: absolute;
+  width: 20vw;
+  height: 3vw;
+  top:50%;
+  transform:translate(0, -50%);
+  right: 1vw;
+  background-color: #191919;
+  border: solid 0.1vw;
+  border-radius: 0.2vw;
+
+  /* color: #f69c02; */
+  color: #ffcb77;
+  font: normal 2vw/3vw 'Sawarabi Mincho', serif;
+  text-align: center;
+}
+
+.panel .display .date {
+  display: inline-block;
+  margin-top: 9vw;
+  margin-left: 0.5vw;
+  width: 12vw;
+  height: 10.5vw;
+  text-align: right;
+}
+
+.panel .display .milisec {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10vw; 
+  margin-left: 0.5vw;
+  width: 15vw;
+  height: 10.5vw;
+}
+
+.panel .display .date .number_text4two {
+  position: absolute;
+  font: normal 7vw/7vw 'DSEG7Modern-Bold', sans-serif;
+  font-weight: 400;
+  width: 11.5vw;
+  color: #ffcb77;
+  margin-top: 0.5vw;
+}
+
+.panel .display .milisec .number_text4three {
+  position: absolute;
+  font: normal 6vw/6vw 'DSEG7Modern-Bold', sans-serif;
+  font-weight: 400;
+  color: #ffcb77;
+  margin-top: 0.5vw;
+}
+
+.panel .display .date .back {
+  color: #ffcb7720;
+}
+
+.panel .display .milisec .back {
+  color: #ffcb7720;
+}
+
+.panel .display .date_text {
+  position: absolute;
+  font: normal 2vw/2vw 'Sawarabi Mincho', sans-serif;
+  font-weight: 400;
+  color: #ffcb77;
+  text-align: right;
+  margin-top: 8vw;
+  margin-left: 10vw;
+}
+
+.panel .display .milisec_text {
+  position: absolute;
+  font: normal 2vw/2vw 'Sawarabi Mincho', sans-serif;
+  font-weight: 400;
+  color: #ffcb77;
+  text-align: right;
+  margin-top: 7vw;
+  margin-left: 14vw;
+}
