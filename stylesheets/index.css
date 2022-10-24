@@ -2,7 +2,7 @@
 @font-face {
   font-family: "DSEG7Modern-Bold";
   font-style: normal;
-  src: local("DSEG7Modern-Bold"), url("./fonts/DSEG7Modern-Bold.woff") format("woff"), url("./fonts/DSEG7Modern-Bold.ttf") format("truetype");
+  src: local("DSEG7Modern-Bold"), url("/fonts/DSEG7Modern-Bold.woff") format("woff"), url("/fonts/DSEG7Modern-Bold.ttf") format("truetype");
 }
 /* line 11, ../sass/index.scss */
 body {
