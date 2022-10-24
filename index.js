@@ -1,20 +1,3 @@
- const tmp = [
-{
-title: "バレー",
-start: "我孫子町",
-goal: "古川橋",
-start_time: "Sat Oct 25 2022 07:49:00 GMT+0900 (日本標準時)",
-goal_time: "Sat Oct 25 2022 08:51:00 GMT+0900 (日本標準時)"
-},
-{
-title: "バレー",
-start: "あびこ",
-goal: "古川橋",
-start_time: "Sat Oct 25 2022 07:50:00 GMT+0900 (日本標準時)",
-goal_time: "Sat Oct 25 2022 08:51:00 GMT+0900 (日本標準時)"
-}
-]
-
 let timerId;
 let res;
 
@@ -22,11 +5,10 @@ function getStartTime() {
     const url = "https://script.google.com/macros/s/AKfycbzehMRLqxs45OSgBnihSN6Mgbezs6Np1TKtk6GDfpxxBD8lHkFo7uvnreI9B25DC0w-qw/exec";
     const request = new XMLHttpRequest();
 
-    // request.open("GET", url, false);
-    // request.send();
+    request.open("GET", url, false);
+    request.send();
 
-    // res = JSON.parse(request.responseText);
-    res = tmp;
+    res = JSON.parse(request.responseText);
 
     if (res[0].start == "home") {
         const goal_time = new Date(res[0].goal_time);
