@@ -49,7 +49,6 @@ function jrButton() {
     if (timerId) {
         clearInterval(timerId);
     }
-    console.log("hoge")
     showJR(res[0]);
 }
 
@@ -57,7 +56,6 @@ function metroButton() {
     if (timerId) {
         clearInterval(timerId);
     }
-    console.log("fuga")
     showMetro(res[1]);
 }
 
