@@ -19,7 +19,7 @@ function getStartTime() {
         document.getElementById("metro").classList.add("opacity");
         timerId = setInterval( () => { showTimer(res[0].start_time) }, 1);
     } else {
-        if (new Date(res[0].start_time).getTime() <= new Date(res[1].start_time).getTime()) {
+        if (new Date(res[0].start_time).getTime() >= new Date(res[1].start_time).getTime()) {
             showJR(res[0]);
         } else {
             showMetro(res[1]);
