@@ -52,9 +52,6 @@ function showJR(res) {
 }
 
 function showMetro(res) {
-    if (timerId) {
-        clearInterval(timerId);
-    }
     const goal_time = new Date(res.goal_time);
     document.getElementById("event_title").innerHTML = res.title;
     document.getElementById("station_text").innerHTML = res.goal + " 駅";
@@ -104,28 +101,11 @@ function showTimer(time) {
 //    document.getElementById("sec_text").innerHTML = set2fig(sec);
 //    document.getElementById("milisec_text").innerHTML = set3fig(mili);
 
-   document.getElementById("date_text").innerHTML = date;
-   document.getElementById("hour_text").innerHTML = hour;
-   document.getElementById("min_text").innerHTML = min;
-   document.getElementById("sec_text").innerHTML = sec;
-   document.getElementById("milisec_text").innerHTML = mili;
+   document.getElementById("date_text").innerHTML = (date > 0) ? date : set2fig(0);
+   document.getElementById("hour_text").innerHTML = (hour > 0) ? hour : set2fig(0);
+   document.getElementById("min_text").innerHTML = (min > 0) ? min : set2fig(0);
+   document.getElementById("sec_text").innerHTML = (sec > 0) ? sec : set2fig(0);
+   document.getElementById("milisec_text").innerHTML = (mili > 0) ? mili : set2fig(0);
 }
 
-function showClock() {
-   const nowTime = new Date();
-   const date = nowTime.getDate();
-   const hour = nowTime.getHours();
-   const min = nowTime.getMinutes();
-   const sec = nowTime.getSeconds();
-   const mili = nowTime.getMilliseconds();
-
-   document.getElementById("date_text").innerHTML = set2fig(date);
-   document.getElementById("hour_text").innerHTML = set2fig(hour);
-   document.getElementById("min_text").innerHTML = set2fig(min);
-   document.getElementById("sec_text").innerHTML = set2fig(sec);
-   document.getElementById("milisec_text").innerHTML = set3fig(mili);
-}
-
-
-// setInterval('showClock()',1);
 getStartTime();
