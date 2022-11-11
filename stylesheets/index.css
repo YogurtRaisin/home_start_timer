@@ -83,7 +83,7 @@ body {
   left: 10vw;
 }
 
-.panel .display .arrival_time_text {
+.panel .display .start_time_text {
   position: absolute;
   width: 30vw;
   top: 3vw;
@@ -92,7 +92,24 @@ body {
   color: #ffcb77;
 }
 
-.panel .display .arrival_time_text #time_text {
+.panel .display .start_time_text #start_time_text {
+  position: absolute;
+  top: 0vw;
+  left: 16vw;
+  /* font: normal 2vw/2vw 'DSEG7Modern-Bold', serif; */
+  font: normal 2vw/3vw 'Lato', serif;
+}
+
+.panel .display .arrival_time_text {
+  position: absolute;
+  width: 30vw;
+  top: 5.5vw;
+  left: 30vw;
+  font: normal 2vw/3vw 'Sawarabi Mincho', serif;
+  color: #ffcb77;
+}
+
+.panel .display .arrival_time_text #arrival_time_text {
   position: absolute;
   top: 0vw;
   left: 16vw;

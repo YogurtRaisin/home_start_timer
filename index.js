@@ -43,12 +43,14 @@ function metroButton() {
 
 function showJR(res) {
     const goal_time = new Date(res.goal_time);
+    const start_time = new Date(res.start_time);
     document.getElementById("event_title").innerHTML = res.title;
     document.getElementById("station_text").innerHTML = res.goal + " 駅";
-    document.getElementById("time_text").innerHTML = goal_time.getHours() + " 時 " + goal_time.getMinutes() + "分";
+    document.getElementById("start_time_text").innerHTML = start_time.getHours() + " 時 " + start_time.getMinutes() + "分";
+    document.getElementById("arrival_time_text").innerHTML = goal_time.getHours() + " 時 " + goal_time.getMinutes() + "分";
     document.getElementById("jr").classList.remove("opacity");
     document.getElementById("metro").classList.add("opacity");
-    timerId = setInterval( () => { showTimer(res.start_time) }, 1);
+    timerId = setInterval( () => { showTimer(start_time) }, 1);
 }
 
 function showMetro(res) {
